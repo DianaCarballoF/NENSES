@@ -11,112 +11,83 @@
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #F3F2EC;
             color: #2F5F48;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+
+        p, a, li {
+            font-weight: 300;
         }
 
         .header {
             background-color: #F3F2EC;
-            padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .header h1 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #2F5F48;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            font-weight: 300;
-            color: #2F5F48;
+            padding: 1em 0;
         }
 
         .hero {
+            background-color: #F3F2EC;
             text-align: center;
-            padding: 60px 20px;
-            background-color: #FFFFFF;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #2F5F48;
-        }
-
-        .hero p {
-            font-weight: 300;
-            color: #2F5F48;
-        }
-
-        .about-section, .services-section, .blog-section {
-            padding: 40px 20px;
-        }
-
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #2F5F48;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-weight: 300;
-            line-height: 1.6;
-            color: #2F5F48;
-        }
-
-        .services-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .service-card {
-            flex: 1 1 calc(33.333% - 20px);
-            background-color: #FFFFFF;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #2F5F48;
+            padding: 2em 1em;
         }
 
         .btn {
-            display: inline-block;
-            padding: 10px 20px;
             background-color: #2F5F48;
-            color: #FFFFFF;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
             text-decoration: none;
-            border-radius: 5px;
             font-weight: 600;
-            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 1em;
         }
 
-        .btn:hover {
-            background-color: #1E4131;
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-container, .contact-form {
+            display: grid;
+            gap: 1.5em;
+        }
+
+        .services-container {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #F3F2EC;
-            color: #2F5F48;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #2F5F48;
+        }
+
+        form button {
+            background-color: #2F5F48;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+
+        .testimonials {
+            background-color: #F3F2EC;
+            padding: 2em 1em;
+        }
+
+        .newsletter {
+            margin-top: 2em;
         }
     </style>
 </head>
@@ -130,6 +101,7 @@
                     <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -137,9 +109,10 @@
     </header>
 
     <section id="inicio" class="hero">
-        <div class="hero-content">
+        <div class="container">
             <h2>Optimiza la Experiencia de tu Espacio</h2>
             <p>Ofrecemos soluciones sensoriales para transformar tu entorno.</p>
+            <a href="#contacto" class="btn">¡Transforma la experiencia de tus clientes hoy!</a>
         </div>
     </section>
 
@@ -155,17 +128,17 @@
             <h2>Nuestros Servicios</h2>
             <div class="services-container">
                 <div class="service-card">
-                    <h3>Paquete 1: Diagnóstico Sensorial Inicial</h3>
+                    <h3>Diagnóstico Sensorial Inicial</h3>
                     <p>Evaluamos tu espacio para identificar áreas de oportunidad en iluminación, diseño del espacio y estímulos sensoriales.</p>
                     <a href="https://calendly.com/nenses/diagnostico" target="_blank" class="btn">Seleccionar</a>
                 </div>
                 <div class="service-card">
-                    <h3>Paquete 2: Estrategias Sensoriales</h3>
+                    <h3>Estrategias Sensoriales</h3>
                     <p>Diseñamos estrategias personalizadas para optimizar la experiencia del cliente integrando elementos sensoriales clave.</p>
                     <a href="https://calendly.com/nenses/estrategias" target="_blank" class="btn">Seleccionar</a>
                 </div>
                 <div class="service-card">
-                    <h3>Paquete 3: Inmersión Sensorial</h3>
+                    <h3>Inmersión Sensorial</h3>
                     <p>Transformamos tus espacios mediante análisis detallado y estrategias sensoriales avanzadas.</p>
                     <a href="https://calendly.com/nenses/inmersion" target="_blank" class="btn">Seleccionar</a>
                 </div>
@@ -177,10 +150,39 @@
         <div class="container">
             <h2>Blog</h2>
             <p>En nuestro blog, encontrarás artículos sobre tendencias en diseño sensorial, consejos sobre cómo mejorar la atmósfera de tus espacios y cómo optimizar la experiencia del usuario.</p>
+            <a href="#" class="btn">Descargar Guía Gratis</a>
         </div>
     </section>
 
-    <footer id="contacto" class="footer">
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <p>"NENSES transformó nuestro espacio, mejorando la experiencia del cliente en formas que nunca imaginamos." - Cliente Satisfecho</p>
+            <p>"Gracias a NENSES, nuestras ventas aumentaron al implementar sus estrategias sensoriales." - Empresa XYZ</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form class="contact-form">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="newsletter">
+                <h3>Suscríbete a nuestro Newsletter</h3>
+                <form>
+                    <input type="email" name="newsletter" placeholder="Correo Electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="container">
             <p>&copy; 2025 NENSES. Todos los derechos reservados.</p>
         </div>
