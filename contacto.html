@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto - NENSES</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <h1 class="logo">NENSES</h1>
-            <nav class="navigation">
-                <a href="index.html">Inicio</a>
+            <div class="logo">
+                <h1>NENSES</h1>
+            </div>
+            <nav class="nav">
+                <a href="inicio.html">Inicio</a>
                 <a href="servicios.html">Servicios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
                 <a href="testimonios.html">Testimonios</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <!-- Contacto Section -->
+    <!-- Contacto -->
     <section id="contacto" class="contacto">
         <div class="container">
             <h2>Contacto</h2>
-            <p>¿Estás listo para transformar tu espacio? Contáctanos para más detalles.</p>
-            <form action="#" method="post">
+            <p>¿Listo para transformar tu espacio? Contáctanos para una cotización personalizada.</p>
+            <form action="submit_form.php" method="POST">
                 <input type="text" name="nombre" placeholder="Tu nombre" required>
                 <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-                <button type="submit" class="btn-main">Enviar</button>
+                <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
             <p>&copy; 2025 NENSES. Todos los derechos reservados.</p>
         </div>
     </footer>
-
 </body>
+
 </html>
