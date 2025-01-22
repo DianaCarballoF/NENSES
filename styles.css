@@ -1,11 +1,10 @@
-/* Archivo styles.css */
-
 /* Estilos globales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #2F5F48;
+    background-color: #F9F9F9; /* Color de fondo suave para el entorno */
 }
 
 .container {
@@ -16,14 +15,19 @@ body {
 
 /* Header */
 .header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #F3F2EC; /* Color cálido para el encabezado */
+    color: #2F5F48;
     padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
 }
+
 .header h1 {
     text-align: center;
     margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
+
 .header nav ul {
     list-style-type: none;
     padding: 0;
@@ -32,13 +36,17 @@ body {
     gap: 20px;
     margin-top: 10px;
 }
+
 .header nav ul li a {
-    color: white;
+    color: #2F5F48;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
 }
+
 .header nav ul li a:hover {
     text-decoration: underline;
+    color: #4CAF50;
 }
 
 /* Hero Section */
@@ -47,13 +55,18 @@ body {
     color: white;
     text-align: center;
     padding: 100px 20px;
+    background-size: cover;
 }
+
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    font-weight: 600;
 }
+
 .hero p {
     font-size: 1.2rem;
+    font-weight: 300;
 }
 
 /* About Section */
@@ -62,9 +75,16 @@ body {
     background-color: #f9f9f9;
     text-align: center;
 }
+
 .about-section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #2F5F48;
 }
 
 /* Services Section */
@@ -73,16 +93,20 @@ body {
     background-color: #f9f9f9;
     text-align: center;
 }
+
 .services-section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    font-weight: 600;
 }
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
+
 .service-card {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,16 +114,27 @@ body {
     padding: 20px;
     max-width: 300px;
     text-align: left;
+    transition: transform 0.3s ease;
 }
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
 .service-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #4CAF50;
+    font-weight: 600;
 }
+
 .service-card p {
     font-size: 1rem;
     margin-bottom: 15px;
+    font-weight: 300;
+    color: #2F5F48;
 }
+
 .service-card .btn {
     display: inline-block;
     background-color: #4CAF50;
@@ -109,7 +144,9 @@ body {
     border-radius: 4px;
     font-weight: bold;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
+
 .service-card .btn:hover {
     background-color: #45a049;
 }
@@ -120,19 +157,97 @@ body {
     background-color: #fff;
     text-align: center;
 }
+
 .blog-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: 600;
 }
-.blog-section p {
-    font-size: 1.2rem;
+
+.blog-post {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #2F5F48;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post h3 {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.blog-post p {
+    margin-bottom: 1em;
+    font-weight: 300;
+    color: #2F5F48;
 }
 
 /* Footer */
-.footer {
-    background-color: #333;
-    color: white;
+footer {
+    background-color: #F3F2EC;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    padding: 1em 0;
+    margin-top: 2em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra para añadir profundidad */
+}
+
+footer p {
+    margin: 0;
+    color: #2F5F48;
+}
+
+/* Contact Section */
+.contact-section form input, 
+.contact-section form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #2F5F48;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #2F5F48;
+}
+
+.contact-section form button {
+    background-color: #2F5F48;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #4CAF50;
+}
+
+/* Newsletter */
+.newsletter form input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #2F5F48;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #2F5F48;
+}
+
+.newsletter form button {
+    background-color: #2F5F48;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter form button:hover {
+    background-color: #4CAF50;
 }
