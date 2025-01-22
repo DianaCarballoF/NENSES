@@ -1,201 +1,77 @@
-/* Estilos Generales */
+/* Tipografía */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF; /* Fondo blanco para frescura */
-    color: #333333; /* Texto oscuro para legibilidad */
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
 }
 
 /* Header */
-header {
-    background-color: #FFB400; /* Color vibrante en el header */
+.header {
+    background-color: #6DBE45;
     padding: 20px 0;
 }
 
-.header .logo {
-    font-size: 2.5rem;
-    color: #FFFFFF;
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header .logo h1 {
+    font-size: 2rem;
+    color: #fff;
     font-weight: 600;
 }
 
-header nav {
-    text-align: right;
-}
-
-header nav a {
-    margin: 0 15px;
-    color: #FFFFFF;
+.header .nav a {
+    font-size: 1rem;
+    color: #fff;
+    margin-left: 20px;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 300;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+.header .nav a:hover {
+    color: #333333;
 }
 
-/* Sección de Introducción */
-.intro {
-    background-color: #6DBE45; /* Verde vibrante */
-    color: #FFFFFF;
-    padding: 80px 0;
+/* Hero Section */
+.hero {
+    background-color: #6DBE45;
+    padding: 100px 0;
     text-align: center;
+    color: #fff;
 }
 
-.intro h2 {
-    font-size: 3rem;
+.hero h2 {
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.intro p {
+.hero p {
     font-size: 1.2rem;
     font-weight: 300;
-    margin-bottom: 40px;
 }
 
-.intro .btn-main {
-    background-color: #FFB400; /* Botón amarillo brillante */
-    color: #FFFFFF;
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.intro .btn-main:hover {
-    background-color: #3E8E41; /* Azul suave para el hover */
-}
-
-/* Sección de Servicios */
-.servicios {
+/* Servicios */
+#servicios {
     padding: 60px 0;
-    background-color: #F5F5F5; /* Fondo gris suave */
     text-align: center;
 }
 
-.servicios h2 {
+#servicios h2 {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    color: #333;
+    margin-bottom: 40px;
 }
 
 .service {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .service h3 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #3E8E41; /* Azul suave */
-    margin-bottom: 15px;
-}
-
-.service p {
-    font-size: 1.1rem;
-    color: #333333;
-    font-weight: 300;
-}
-
-/* Blog */
-.blog {
-    background-color: #6DBE45; /* Verde vibrante */
-    padding: 60px 0;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.blog h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.blog p {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-/* Contacto */
-.contacto {
-    padding: 60px 0;
-    background-color: #FFB400; /* Fondo amarillo brillante */
-    text-align: center;
-    color: #333333;
-}
-
-.contacto h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.contacto form input,
-.contacto form textarea {
-    width: 80%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 2px solid #333333;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contacto form button {
-    background-color: #3E8E41; /* Botón azul suave */
-    color: #FFFFFF;
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.contacto form button:hover {
-    background-color: #FFB400; /* Cambiar a amarillo al hacer hover */
-}
-
-/* Footer */
-footer {
-    background-color: #333333; /* Fondo oscuro */
-    color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1rem;
-    margin: 0;
-}
-
-/* Ajustes Responsivos */
-@media (max-width: 768px) {
-    .header .logo {
-        font-size: 2rem;
-    }
-
-    header nav a {
-        font-size: 1rem;
-        margin: 0 10px;
-    }
-
-    .intro h2 {
-        font-size: 2.5rem;
-    }
-
-    .service h3 {
-        font-size: 1.8rem;
-    }
-}
+    font-size
