@@ -3,232 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NENSES - Conecta con los sentidos, transforma experiencias</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NENSES: Experiencia Sensorial Personalizada</title>
+    <!-- Link a Google Fonts para Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            color: #2F5F48;
-            background-color: #F1F1F1;
-        }
-
-        h1, h2, h3 {
-            font-weight: 600;
-        }
-
-        p, a, li {
-            font-weight: 300;
-        }
-
-        .header {
-            background-color: #F3F2EC;
-            padding: 1em 0;
-            position: relative;
-        }
-
-        .hero {
-            background-color: #F3F2EC;
-            text-align: center;
-            padding: 5em 1em;
-            background-image: url('https://via.placeholder.com/1920x600');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
-        }
-
-        .btn {
-            background-color: #2F5F48;
-            color: white;
-            padding: 0.75em 1.5em;
-            border: none;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 1em;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #4CAF50;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .services-container, .contact-form {
-            display: grid;
-            gap: 2em;
-        }
-
-        .services-container {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-
-        footer {
-            background-color: #F3F2EC;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 0.75em;
-            margin-bottom: 1em;
-            border: 1px solid #2F5F48;
-            border-radius: 4px;
-        }
-
-        form button {
-            background-color: #2F5F48;
-            color: white;
-            border: none;
-            padding: 0.75em 1.5em;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        .testimonials {
-            background-color: #F3F2EC;
-            padding: 3em 1em;
-        }
-
-        .testimonials p {
-            font-style: italic;
-            color: #2F5F48;
-        }
-
-        .newsletter {
-            margin-top: 2em;
-        }
-
-        .blog-post {
-            margin-top: 1em;
-            padding: 1.5em;
-            border: 1px solid #2F5F48;
-            background-color: #ffffff;
-            transition: transform 0.3s ease;
-        }
-
-        .blog-post:hover {
-            transform: scale(1.05);
-        }
-
-        .blog-post h3 {
-            margin-bottom: 0.5em;
-        }
-
-        .blog-post p {
-            margin-bottom: 1em;
-        }
-    </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header class="header">
         <div class="container">
-            <h1>NENSES</h1>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+            <h1 class="logo">NENSES</h1>
+            <nav class="navigation">
+                <a href="#vision">Visión</a>
+                <a href="#propuesta">Propuesta</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#blog">Blog</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <section id="inicio" class="hero">
+    <!-- Main Section -->
+    <section class="intro">
         <div class="container">
-            <h2>Conecta con los Sentidos, Transforma tu Espacio</h2>
-            <p>Sumérgete en una experiencia sensorial única diseñada para transformar tu entorno.</p>
-            <a href="#contacto" class="btn">¡Inicia tu Transformación Sensory!</a>
+            <h2 class="main-message">Conecta con los Sentidos, Transforma tu Espacio</h2>
+            <p class="intro-description">Sumérgete en una experiencia sensorial única diseñada para transformar tu entorno. En NENSES, cada detalle importa y tiene el poder de cambiar cómo te sientes en tu espacio.</p>
+            <a href="#servicios" class="btn-main">Explorar Servicios</a>
         </div>
     </section>
 
-    <section id="sobre-nosotros" class="about-section">
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
         <div class="container">
-            <h2>Acerca de Nosotros</h2>
-            <p>NENSES ofrece soluciones sensoriales personalizadas para enriquecer la experiencia de tus clientes. Creamos espacios donde cada detalle cuenta, integrando iluminación, aromas, texturas y sonidos para generar una experiencia envolvente. Nuestro trabajo se enfoca en hacer de cada entorno un lugar único, memorable y funcional.</p>
+            <h2>Visión</h2>
+            <p>En NENSES, nuestra misión es crear espacios sensoriales que conecten emocionalmente con las personas. Transformamos la atmósfera a través de detalles que estimulan los sentidos, creando experiencias inolvidables para cada cliente.</p>
         </div>
     </section>
 
-    <section id="servicios" class="services-section">
+    <!-- Propuesta Section -->
+    <section id="propuesta" class="propuesta">
         <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <h3>Diagnóstico Sensorial Inicial</h3>
-                    <p>Estudiamos tu espacio para identificar áreas clave de oportunidad y mejorar la atmósfera sensorial.</p>
-                    <a href="https://calendly.com/nenses/diagnostico" target="_blank" class="btn">Seleccionar</a>
-                </div>
-                <div class="service-card">
-                    <h3>Estrategias Sensoriales</h3>
-                    <p>Elaboramos estrategias personalizadas que integran estímulos sensoriales para optimizar la percepción de tus clientes.</p>
-                    <a href="https://calendly.com/nenses/estrategias" target="_blank" class="btn">Seleccionar</a>
-                </div>
-                <div class="service-card">
-                    <h3>Inmersión Sensorial</h3>
-                    <p>Transformamos tu espacio de manera profunda con intervenciones sensoriales avanzadas para una inmersión total.</p>
-                    <a href="https://calendly.com/nenses/inmersion" target="_blank" class="btn">Seleccionar</a>
-                </div>
+            <h2>Nuestra Propuesta</h2>
+            <p>Ofrecemos soluciones sensoriales personalizadas que diseñan espacios con el objetivo de fidelizar y emocionar. Nuestro enfoque abarca desde pequeñas tiendas hasta grandes corporaciones, adaptándonos a cada necesidad y asegurando resultados tangibles.</p>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service">
+                <h3>Diagnóstico Sensorial Inicial</h3>
+                <p>Estudiamos tu espacio para identificar áreas clave de oportunidad y mejorar la atmósfera sensorial.</p>
+                <button class="btn-select">Seleccionar</button>
+            </div>
+            <div class="service">
+                <h3>Estrategias Sensoriales</h3>
+                <p>Elaboramos estrategias personalizadas que integran estímulos sensoriales para optimizar la percepción de tus clientes.</p>
+                <button class="btn-select">Seleccionar</button>
+            </div>
+            <div class="service">
+                <h3>Inmersión Sensorial</h3>
+                <p>Transformamos tu espacio de manera profunda con intervenciones sensoriales avanzadas para una inmersión total.</p>
+                <button class="btn-select">Seleccionar</button>
             </div>
         </div>
     </section>
 
-    <section id="blog" class="blog-section">
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
         <div class="container">
             <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>Neuromarketing Sensorial: La Ciencia detrás de la Experiencia del Cliente</h3>
-                <p>El neuromarketing sensorial explora cómo los estímulos físicos afectan nuestras decisiones. Descubre cómo mejorar la experiencia del cliente a través de una combinación precisa de luz, sonido y olor...</p>
-                <a href="#" class="btn">Leer más</a>
-            </div>
-            <a href="#" class="btn">Descargar Guía Gratis</a>
+            <p>Explora nuestras ideas y tendencias sobre el diseño sensorial y cómo transformamos los espacios. Aquí te compartimos artículos interesantes y consejos sobre cómo mejorar la experiencia de tus clientes.</p>
+            <a href="#" class="btn-main">Ver Artículos</a>
         </div>
     </section>
 
-    <section id="testimonios" class="testimonials">
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="testimonios">
         <div class="container">
             <h2>Testimonios</h2>
-            <p>"La experiencia sensorial que nos proporcionó NENSES cambió la percepción de nuestros clientes. ¡Definitivamente superaron nuestras expectativas!" - Cliente Satisfecho</p>
-            <p>"Con la integración de estrategias sensoriales, nuestros espacios se volvieron mucho más atractivos y funcionales." - Empresa XYZ</p>
-        </div>
-    </section>
-
-    <section id="contacto" class="contact-section">
-        <div class="container">
-            <h2>Contáctanos</h2>
-            <form class="contact-form">
-                <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-
-            <div class="newsletter">
-                <h3>Suscríbete a nuestro Newsletter</h3>
-                <form>
-                    <input type="email" name="newsletter" placeholder="Correo Electrónico" required>
-                    <button type="submit">Suscribirse</button>
-                </form>
+            <div class="testimonio">
+                <p>"NENSES transformó nuestra tienda de una manera increíble. Los clientes ahora se sienten más cómodos y la atmósfera es mucho más atractiva." - Ana, Propietaria de Tienda</p>
+            </div>
+            <div class="testimonio">
+                <p>"Gracias a las estrategias sensoriales de NENSES, hemos notado un aumento en la satisfacción de nuestros visitantes." - Juan, Director de Marketing</p>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Contacto Section -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Estás listo para transformar tu espacio? Contáctanos para una cotización personalizada y descubrir cómo podemos ayudarte a crear una experiencia sensorial única para tu negocio.</p>
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="btn-select">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2025 NENSES. Todos los derechos reservados.</p>
         </div>
     </footer>
+
 </body>
 </html>
